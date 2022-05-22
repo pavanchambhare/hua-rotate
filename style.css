@@ -1,0 +1,43 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--dark);
+    color: #fff;
+    overflow: hidden;
+ }
+
+header{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    height: 100vh;
+    margin:  0 auto;
+}
+.insta{
+    position: absolute;
+    top: 0%;
+    opacity: 30%;
+    right: 5%;
+    margin-bottom: 1rem;
+   color: rgb(211, 11, 11);
+   background-color: aqua;
+   animation: colorChange 0.7s  infinite;
+   animation-duration: infinite;
+   animation-delay: 1s;
+   animation-iteration-count: infinite;
+   border: 10px solid black;
+}
+@keyframes colorChange{
+    0%{
+      filter: hue-rotate(0deg);
+      top: 0%;
+      rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+       top: 100%;
+      filter: hue-rotate(360deg);
+    }
+  }
